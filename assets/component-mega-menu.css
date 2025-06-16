@@ -84,6 +84,11 @@
   list-style: none;
 }
 
+.mega-menu__list > li{
+  padding-left: var(--outer);
+  padding-right: var(--outer);
+}
+
 .mega-menu__link {
   color: rgba(var(--color-foreground), 0.75);
   display: block;
