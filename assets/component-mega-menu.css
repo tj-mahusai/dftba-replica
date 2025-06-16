@@ -85,8 +85,8 @@
 }
 
 .mega-menu__list > li{
-  padding-left: var(--outer);
-  padding-right: var(--outer);
+  padding: 3.2rem;
+  padding: 3.2rem;
 }
 
 .mega-menu__link {
