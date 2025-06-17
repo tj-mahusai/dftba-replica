@@ -37,6 +37,21 @@
     },
     "header": {
       "type": "header",
+      "blocks": {
+        "image_aYbzHN": {
+          "type": "image",
+          "settings": {
+            "menu-number": 1,
+            "heading": "",
+            "heading_size": "h1",
+            "subtext": "",
+            "subtext_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "image_aYbzHN"
+      ],
       "settings": {
         "logo_position": "middle-center",
         "mobile_logo_position": "center",
