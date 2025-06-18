@@ -99,7 +99,7 @@
                         class="announcement-bar__link link link--text focus-inset animate-arrow"
                       >
                     {%- endif -%}
-                    <p class="announcement-bar__message h5{% if section.settings.marquee %} marquee{% endif %}">
+                    <div class="announcement-bar__message h5{% if section.settings.marquee %} marquee{% endif %}">
                       {% if section.settings.marquee %}
                         <div>
                           <span>{{ block.settings.text | escape }}</span>
@@ -111,7 +111,7 @@
                           {{- 'icon-arrow.svg' | inline_asset_content -}}
                         {%- endif -%}
                       {% endif %}
-                    </p>
+                    </div>
                     {%- if block.settings.link != blank -%}
                       </a>
                     {%- endif -%}
