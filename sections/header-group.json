@@ -50,10 +50,36 @@
             "link": "shopify://collections/cats",
             "color": "#ffffff"
           }
+        },
+        "image_gp6fgW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/hiker-running-up-beaten-track-between-the-trees.jpg",
+            "menu_number": 4,
+            "heading": "About Us",
+            "heading_size": "h1",
+            "subtext": "",
+            "link": "shopify://blogs/news/ptcg",
+            "color": ""
+          }
+        },
+        "image_TtifKe": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/autumn-trees-hillside.jpg",
+            "menu_number": 1,
+            "heading": "The Team",
+            "heading_size": "h1",
+            "subtext": "",
+            "link": "shopify://pages/contact",
+            "color": ""
+          }
         }
       },
       "block_order": [
-        "image_aYbzHN"
+        "image_aYbzHN",
+        "image_gp6fgW",
+        "image_TtifKe"
       ],
       "settings": {
         "logo_position": "middle-center",
