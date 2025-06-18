@@ -47,7 +47,7 @@
                             <span class="svg-wrapper">
                               {{- 'icon-arrow.svg' | inline_asset_content -}}
                             </span>
-                            <span class="return-title">{{ link.title | escape }}</span>
+                            <span class="h4">{{ link.title | escape }}</span>
                           </button>
                           <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
                             {%- for childlink in link.links -%}
