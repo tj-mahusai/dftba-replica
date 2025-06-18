@@ -88,7 +88,7 @@
                 tabindex="-1"
               >
                 <div
-                  class="announcement-bar__announcement"
+                  class="announcement-bar__announcement{% if section.settings.marquee %} marquee{% endif %}"
                   role="region"
                   aria-label="{{ 'sections.header.announcement' | t }}"
                 >
