@@ -162,6 +162,17 @@
   </div>
 </div>
 
+{% style %}
+  .marquee {
+    animation: marquee 5s linear infinite;
+  }
+
+  @keyframes marquee {
+    0% { left: 0; }
+    100% { left: -100%; }
+  }
+{% endstyle %}
+
 {% schema %}
 {
   "name": "t:sections.announcement-bar.name",
