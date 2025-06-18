@@ -111,12 +111,23 @@
                           {% endif %}
                           <div
                             class="text-container"
-                            {% if block.settings.color %}
-                              style="color: {{ block.settings.color }};"
-                            {% endif %}
                           >
-                            <h2 class="{{ block.settings.heading_size }}">{{ block.settings.heading }}</h2>
-                            <p class="{{ block.settings.subtext_size }}">{{ block.settings.subtext }}</p>
+                            <h2
+                              class="{{ block.settings.heading_size }}"
+                              {% if block.settings.color %}
+                                style="color: {{ block.settings.color }};"
+                              {% endif %}
+                            >
+                              {{ block.settings.heading }}
+                            </h2>
+                            <p
+                              class="{{ block.settings.subtext_size }}"
+                              {% if block.settings.color %}
+                                style="color: {{ block.settings.color }};"
+                              {% endif %}
+                            >
+                              {{ block.settings.subtext }}
+                            </p>
                           </div>
                         </div>
                         {% if block.settings.link %}</a>{% endif %}
