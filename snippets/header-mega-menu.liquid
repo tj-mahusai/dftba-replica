@@ -34,7 +34,7 @@
                   assign num_items = link.links.size
                   for block in section.blocks
                     if block.type == 'image' and block.settings.menu_number == forloop.index
-                      assign num_items = num_items + 1
+                      assign num_items = num_items | plus: 1
                     endif
                   endfor
                 -%}
