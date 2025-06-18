@@ -30,8 +30,16 @@
                 class="mega-menu__content color-{{ section.settings.menu_color_scheme }} gradient motion-reduce global-settings-popup"
                 tabindex="-1"
               >
+                {%- liquid
+                  assign num_items = link.links.size
+                  for block in section.blocks
+                    if block.type == 'image' and block.settings.menu_number == forloop.index
+                      increment num_items
+                    endif
+                  endfor
+                -%}
                 <ul
-                  class="mega-menu__list{% if link.levels == 1 %} mega-menu__list--condensed{% endif %}"
+                  class="mega-menu__list{% if link.levels == 1 %} mega-menu__list--condensed{% endif %} items-{{ num_items }}"
                   role="list"
                 >
                   {%- for childlink in link.links -%}
