@@ -41,10 +41,15 @@
                 <ul
                   data-test="{{ section.blocks[0].settings.menu_number }}"
                   data-test2="{{ forloop.index }}"
+                  <!--
                   data-test3="{{ section.blocks[0].settings.menu_number == forloop.index }}"
-                  class="mega-menu__list{% if link.levels == 1 %} mega-menu__list--condensed{% endif %} items-{{ num_items }}"
-                  role="list"
+                  --
                 >
+                  class="mega-menu__list
+                  {%- if link.levels == 1 %} mega-menu__list--condensed{% endif %}
+                  items-
+                  {{- num_items -}}
+                  " role="list" >
                   {%- for childlink in link.links -%}
                     <li>
                       <a
