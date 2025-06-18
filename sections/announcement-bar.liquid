@@ -101,9 +101,18 @@
                     {%- endif -%}
                     <p class="announcement-bar__message h5{% if section.settings.marquee %} marquee{% endif %}">
                       <span>{{ block.settings.text | escape }}</span>
-                      {%- if block.settings.link != blank -%}
-                        {{- 'icon-arrow.svg' | inline_asset_content -}}
-                      {%- endif -%}
+                      {% if section.settings.marquee %}
+                        marquee
+                        <div>
+                          <span>{{ block.settings.text | escape }}</span>
+                          <span>{{ block.settings.text | escape }}</span>
+                        </div>
+                      {% else %}
+                        <span>{{ block.settings.text | escape }}</span>
+                        {%- if block.settings.link != blank -%}
+                          {{- 'icon-arrow.svg' | inline_asset_content -}}
+                        {%- endif -%}
+                      {% endif %}
                     </p>
                     {%- if block.settings.link != blank -%}
                       </a>
@@ -165,6 +174,25 @@
 {% style %}
   .marquee {
     animation: marquee 5s linear infinite;
+  }
+
+  .marquee div {
+    display: block;
+    width: 200%;
+
+    position: absolute;
+    overflow: hidden;
+
+    animation: marquee 5s linear infinite;
+  }
+
+  .marquee:hover div {
+    animation-play-state: paused;
+  }
+
+  .marquee span {
+    float: left;
+    width: 50%;
   }
 
   @keyframes marquee {
