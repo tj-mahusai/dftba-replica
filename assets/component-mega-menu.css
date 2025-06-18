@@ -86,7 +86,10 @@
 
 .mega-menu__list:not(.irrelevant) > li{
   padding: 3.2rem;
-  padding: 3.2rem;
+}
+
+.mega-menu__list:not(.irrelevant) > li.image{
+  padding: 0;
 }
 
 .mega-menu__link {
