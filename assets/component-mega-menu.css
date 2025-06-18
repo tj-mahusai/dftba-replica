@@ -91,6 +91,12 @@
   padding: 0;
 }
 
+.mega-menu__list > li.image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover:
+}
+
 .mega-menu__link {
   color: rgba(var(--color-foreground), 0.75);
   display: block;
