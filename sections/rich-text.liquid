@@ -20,6 +20,12 @@
       <div class="rich-text__blocks {{ section.settings.content_alignment }}">
         {%- for block in section.blocks -%}
           {%- case block.type -%}
+            {%- when 'image' -%}
+              {% if block.settings.image %}
+                {{ block.settings.image | image_url: width: 3840 | image_tag }}
+              {% else %}
+                {{ 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+              {% endif %}
             {%- when 'heading' -%}
               <h2
                 class="rich-text__heading rte inline-richtext {{ block.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
@@ -292,7 +298,7 @@
         {
          "type": "header",
          "content": "t:sections.rich-text.blocks.buttons.settings.header_button1.content"
-        },        
+        },
         {
           "type": "text",
           "id": "button_label",
@@ -314,7 +320,7 @@
         {
          "type": "header",
          "content": "t:sections.rich-text.blocks.buttons.settings.header_button2.content"
-        },          
+        },
         {
           "type": "text",
           "id": "button_label_2",
@@ -331,6 +337,18 @@
           "id": "button_style_secondary_2",
           "default": false,
           "label": "t:sections.rich-text.blocks.buttons.settings.button_style_secondary_2.label"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "name": "Image",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "image",
         }
       ]
     }
