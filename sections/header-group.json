@@ -28,7 +28,7 @@
       "settings": {
         "auto_rotate": false,
         "change_slides_speed": 5,
-        "color_scheme": "",
+        "color_scheme": "scheme-4",
         "show_line_separator": true,
         "show_social": false,
         "enable_country_selector": false,
@@ -41,11 +41,13 @@
         "image_aYbzHN": {
           "type": "image",
           "settings": {
-            "menu-number": 1,
+            "image": "shopify://shop_images/fog-on-dark-waters-edge.jpg",
+            "menu_number": 1,
             "heading": "",
             "heading_size": "h1",
             "subtext": "",
-            "subtext_size": "h1"
+            "subtext_size": "h1",
+            "link": ""
           }
         }
       },
@@ -60,13 +62,15 @@
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
         "color_scheme": "scheme-1",
-        "menu_color_scheme": "",
+        "menu_color_scheme": "scheme-1",
         "enable_country_selector": true,
         "enable_language_selector": true,
         "enable_customer_avatar": true,
         "margin_bottom": 0,
         "padding_top": 20,
-        "padding_bottom": 20
+        "padding_bottom": 20,
+        "highlight_text": "Sale",
+        "highlight_color": "#dddc2c"
       }
     }
   },
