@@ -91,6 +91,7 @@
   padding: 0;
   height: 100%;
   overflow: hidden;
+  position: relative;
 }
 
 .mega-menu__list > li.image img{
