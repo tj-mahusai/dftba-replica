@@ -1,9 +1,8 @@
 {{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 {{ 'component-slideshow.css' | asset_url | stylesheet_tag }}
-
-{%- if section.settings.slide_height == 'adapt_image' and section.blocks.first.settings.image != blank -%}
-  {%- style -%}
+{%- style -%}
+  {%- if section.settings.slide_height == 'adapt_image' and section.blocks.first.settings.image != blank -%}
     @media screen and (max-width: 749px) {
       #Slider-{{ section.id }}::before,
       #Slider-{{ section.id }} .media::before,
@@ -22,8 +21,32 @@
         display: block;
       }
     }
-  {%- endstyle -%}
-{%- endif -%}
+  {%- endif -%}
+  .slider-buttons{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 1;
+    justify-content: space-between;
+    pointer-events: none;
+    transition: opacity .5s;
+  }
+
+  /* slider-component:hover .slider-buttons{
+    opacity: 1;
+  } */
+
+  slider-component .slider-buttons button{
+    pointer-events: all;
+    background: black;
+  }
+
+  /* slider-component .slider-buttons button .icon{
+    color: white
+  } */
+{%- endstyle -%}
 
 <slideshow-component
   class="slider-mobile-gutter{% if section.settings.layout == 'grid' %} page-width{% endif %}{% if section.settings.show_text_below %} mobile-text-below{% endif %}"
@@ -203,32 +226,6 @@
           {{- 'icon-caret.svg' | inline_asset_content -}}
         </span>
       </button>
-      <!--
-        <div class="slider-counter slider-counter--{{ section.settings.slider_visual }}{% if section.settings.slider_visual == 'counter' or section.settings.slider_visual == 'numbers' %} caption{% endif %}">
-          {%- if section.settings.slider_visual == 'counter' -%}
-            <span class="slider-counter--current">1</span>
-            <span aria-hidden="true"> / </span>
-            <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
-            <span class="slider-counter--total">{{ section.blocks.size }}</span>
-          {%- else -%}
-            <div class="slideshow__control-wrapper">
-              {%- for block in section.blocks -%}
-                <button
-                  class="slider-counter__link slider-counter__link--{{ section.settings.slider_visual }} link"
-                  aria-label="{{ 'sections.slideshow.load_slide' | t }} {{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
-                  aria-controls="Slider-{{ section.id }}"
-                >
-                  {%- if section.settings.slider_visual == 'numbers' -%}
-                    {{ forloop.index -}}
-                  {%- else -%}
-                    <span class="dot"></span>
-                  {%- endif -%}
-                </button>
-              {%- endfor -%}
-            </div>
-          {%- endif -%}
-        </div>
-      -->
       <button
         type="button"
         class="slider-button slider-button--next"
