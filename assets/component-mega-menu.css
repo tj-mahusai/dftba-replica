@@ -84,7 +84,7 @@
   list-style: none;
 }
 
-.mega-menu__list > li{
+.mega-menu__list:not(.irrelevant) > li{
   padding: 3.2rem;
   padding: 3.2rem;
 }
@@ -126,9 +126,9 @@
   text-decoration-thickness: 0.2rem;
 }
 
-.mega-menu .mega-menu__list--condensed {
+/* .mega-menu .mega-menu__list--condensed {
   display: block;
-}
+} */
 
 .mega-menu__list--condensed .mega-menu__link {
   font-weight: normal;
