@@ -44,10 +44,11 @@
             "image": "shopify://shop_images/fog-on-dark-waters-edge.jpg",
             "menu_number": 1,
             "heading": "We're Here",
-            "heading_size": "h1",
+            "heading_size": "h2",
             "subtext": "BECAUSE WE'RE HERE",
-            "subtext_size": "h1",
-            "link": "shopify://collections/cats"
+            "subtext_size": "h2",
+            "link": "shopify://collections/cats",
+            "color": "#ffffff"
           }
         }
       },
