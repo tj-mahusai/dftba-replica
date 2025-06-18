@@ -44,12 +44,6 @@
                   endfor
                 -%}
                 <ul
-                  data-test="{{ section.blocks[0].settings.menu_number }}"
-                  data-test2="{{ forloop.index }}"
-                  data-test3="{{ num_items }}"
-                  data-test4="{{ link.levels }}"
-                  data-test5="{{ current_loop_index }}"
-
                   class="
                     mega-menu__list
                     {%- if link.levels == 1 %} mega-menu__list--condensed{% endif %}
