@@ -25,7 +25,7 @@
 .js .mega-menu__content {
   opacity: 0;
   transform: translateY(-1.5rem);
-  border: 2px solid rgb(var(--color-badge-border));
+  border-top: 2px solid rgb(var(--color-badge-border));
 }
 
 .mega-menu[open] .mega-menu__content {
