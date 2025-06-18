@@ -417,6 +417,8 @@
     }
   }
 
+  customElements.define('sticky-header', StickyHeader);
+
   const headerItems = document.querySelector(".header__inline-menu").querySelectorAll("details");
   headerItems.forEach(item => {
     item.addEventListener("mouseover", () => {
@@ -428,8 +430,6 @@
       item.removeAttribute("open");
     });
   });
-
-  customElements.define('sticky-header', StickyHeader);
 {% endjavascript %}
 
 <script type="application/ld+json">
