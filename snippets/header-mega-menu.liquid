@@ -64,7 +64,12 @@
                         {% if childlink.current %}
                           aria-current="page"
                         {% endif %}
-                        {% if childlink.title | upcase == section.settings.highlight_text | upcase %}
+                        {%- liquid
+                          assign cur_title = childlink.title | upcase
+                          assign highlight_title = section.settings.highlight_text | upcase
+                          assign higlight = cur_title == highlight_title
+                        -%}
+                        {% if higlight %}
                           style="color: {{ section.settings.highlight_color }};"
                         {% endif %}
                       >
