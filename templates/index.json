@@ -80,23 +80,11 @@
           "settings": {
             "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
           }
-        },
-        "button_DED8jb": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
         }
       },
       "block_order": [
         "heading_gWaFjL",
-        "text_9EcJzU",
-        "button_DED8jb"
+        "text_9EcJzU"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
