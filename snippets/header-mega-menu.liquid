@@ -54,6 +54,9 @@
                   "
                   role="list"
                 >
+                  {%- if link.levels == 1 %}
+                    <li><ul>
+                  {% endif %}
                   {%- for childlink in link.links -%}
                     <li>
                       <a
@@ -86,6 +89,10 @@
                       {%- endif -%}
                     </li>
                   {%- endfor -%}
+                  {%- if link.levels == 1 %}
+                    </li>
+                    </ul>
+                  {% endif %}
                 </ul>
               </div>
             </details>
