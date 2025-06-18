@@ -101,9 +101,6 @@
                     {% if block.type == 'image' and block.settings.menu_number == current_loop_index %}
                       <li
                         class="image"
-                        {% if block.settings.color %}
-                          style="color: {{ block.settings.color }};"
-                        {% endif %}
                       >
                         {% if block.settings.link %}<a href="{{ block.settings.link }}">{% endif %}
                         <div>
@@ -112,7 +109,12 @@
                           {% else %}
                             {{ 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
                           {% endif %}
-                          <div class="text-container">
+                          <div
+                            class="text-container"
+                            {% if block.settings.color %}
+                              style="color: {{ block.settings.color }};"
+                            {% endif %}
+                          >
                             <h2 class="{{ block.settings.heading_size }}">{{ block.settings.heading }}</h2>
                             <p class="{{ block.settings.subtext_size }}">{{ block.settings.subtext }}</p>
                           </div>
