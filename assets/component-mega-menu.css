@@ -89,6 +89,8 @@
 
 .mega-menu__list > li.image{
   padding: 0;
+  height: 100%;
+  overflow: hidden;
 }
 
 .mega-menu__list > li.image img{
