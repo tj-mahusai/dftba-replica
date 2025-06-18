@@ -14,13 +14,6 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
-        "announcement_NgjX9T": {
-          "type": "announcement",
-          "settings": {
-            "text": "sssssss",
-            "link": ""
-          }
-        },
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
@@ -30,7 +23,6 @@
         }
       },
       "block_order": [
-        "announcement_NgjX9T",
         "announcement-bar-0"
       ],
       "settings": {
