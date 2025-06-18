@@ -27,6 +27,7 @@
 .js .mega-menu__content {
   opacity: 0;
   transform: translateY(-1.5rem);
+  border: 1px solid --color-badge-border;
 }
 
 .mega-menu[open] .mega-menu__content {
@@ -36,7 +37,6 @@
 
 .mega-menu__list {
   display: grid;
-  gap: 0;
   grid-template-columns: repeat(6, minmax(0, 1fr));
   list-style: none;
   padding-inline-start: 0;
