@@ -24,8 +24,8 @@
             "button_style_secondary": false,
             "show_text_box": false,
             "box_align": "bottom-right",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
+            "text_alignment": "right",
+            "text_alignment_mobile": "right",
             "color_scheme": "scheme-1"
           }
         },
