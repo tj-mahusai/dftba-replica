@@ -94,6 +94,10 @@
   position: relative;
 }
 
+.mega-menu__list > li.image a{
+  text-decoration: none;
+}
+
 .mega-menu__list > li.image img{
   height: 100%;
   width: 100%;
