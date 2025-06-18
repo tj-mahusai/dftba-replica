@@ -35,6 +35,7 @@
       ],
       "settings": {
         "auto_rotate": true,
+        "marquee": true,
         "change_slides_speed": 5,
         "color_scheme": "scheme-4",
         "show_line_separator": true,
