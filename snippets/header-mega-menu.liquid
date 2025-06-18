@@ -31,7 +31,11 @@
                 tabindex="-1"
               >
                 {%- liquid
-                  assign num_items = link.links.size
+                  if link.levels == 1
+                    assign num_items = 1
+                  else
+                    assign num_items = link.links.size
+                  endif
                   for block in section.blocks
                     if block.type == 'image' and block.settings.menu_number == forloop.index
                       assign num_items = num_items | plus: 1
