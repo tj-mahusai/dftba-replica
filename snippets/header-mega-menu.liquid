@@ -107,6 +107,10 @@
                           {% else %}
                             {{ 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
                           {% endif %}
+                          <div class="text-container">
+                            <h2 class="{{ block.settings.heading_size }}">{{ block.settings.heading }}</h2>
+                            <p class="{{ block.settings.subtext_size }}">{{ block.settings.subtext }}</p>
+                          </div>
                         </div>
                         {% if block.settings.link %}</a>{% endif %}
                       </li>
