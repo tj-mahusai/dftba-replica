@@ -60,19 +60,19 @@
             "heading_size": "h1",
             "subtext": "",
             "link": "shopify://blogs/news/ptcg",
-            "color": ""
+            "color": "#ffffff"
           }
         },
         "image_TtifKe": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/autumn-trees-hillside.jpg",
-            "menu_number": 1,
+            "menu_number": 4,
             "heading": "The Team",
             "heading_size": "h1",
             "subtext": "",
             "link": "shopify://pages/contact",
-            "color": ""
+            "color": "#ffffff"
           }
         }
       },
