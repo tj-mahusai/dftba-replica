@@ -466,18 +466,18 @@
 
   customElements.define('sticky-header', StickyHeader);
 
-  // const headerItems = document.querySelector(".header__inline-menu").querySelectorAll("details");
-  // headerItems.forEach(item => {
-  //   item.addEventListener("mouseover", () => {
-  //     headerItems.forEach(item => {
-  //       item.removeAttribute("open");
-  //     });
-  //     item.setAttribute("open", true);
-  //     document.querySelector(".header").addEventListener("mouseleave", () => {
-  //       item.removeAttribute("open");
-  //     });
-  //   });
-  // });
+  const headerItems = document.querySelector(".header__inline-menu").querySelectorAll("details");
+  headerItems.forEach(item => {
+    item.addEventListener("mouseover", () => {
+      headerItems.forEach(item => {
+        item.removeAttribute("open");
+      });
+      item.setAttribute("open", true);
+      document.querySelector(".header").addEventListener("mouseleave", () => {
+        item.removeAttribute("open");
+      });
+    });
+  });
 {% endjavascript %}
 
 <script type="application/ld+json">
