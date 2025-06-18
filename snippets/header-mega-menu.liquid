@@ -64,6 +64,9 @@
                         {% if childlink.current %}
                           aria-current="page"
                         {% endif %}
+                        {% if childlink.title | upcase == section.settings.highlight_text | upcase %}
+                          style="color: {{ section.settings.highlight_color }};"
+                        {% endif %}
                       >
                         {{ childlink.title | escape }}
                       </a>
@@ -77,6 +80,9 @@
                                 class="mega-menu__link link{% if grandchildlink.current %} mega-menu__link--active{% endif %}"
                                 {% if grandchildlink.current %}
                                   aria-current="page"
+                                {% endif %}
+                                {% if grandchildlink.title | upcase == section.settings.highlight_text | upcase %}
+                                  style="color: {{ section.settings.highlight_color }};"
                                 {% endif %}
                               >
                                 {{ grandchildlink.title | escape }}
