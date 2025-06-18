@@ -115,6 +115,42 @@
                                 {%- endif -%}
                               </li>
                             {%- endfor -%}
+                            {%- for block in section.blocks -%}
+                              {% if block.type == 'image' and block.settings.menu_number == forloop.index %}
+                                <li
+                                  class="image"
+                                >
+                                  {% if block.settings.link %}<a href="{{ block.settings.link }}">{% endif %}
+                                  <div class="image-container">
+                                    {% if block.settings.image %}
+                                      {{ block.settings.image | image_url: width: 3840 | image_tag }}
+                                    {% else %}
+                                      {{ 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+                                    {% endif %}
+                                    <div
+                                      class="text-container"
+                                    >
+                                      <h2
+                                        class="{{ block.settings.heading_size }}"
+                                        {% if block.settings.color %}
+                                          style="color: {{ block.settings.color }};"
+                                        {% endif %}
+                                      >
+                                        {{ block.settings.heading }}
+                                      </h2>
+                                      <p
+                                        {% if block.settings.color %}
+                                          style="color: {{ block.settings.color }};"
+                                        {% endif %}
+                                      >
+                                        {{ block.settings.subtext }}
+                                      </p>
+                                    </div>
+                                  </div>
+                                  {% if block.settings.link %}</a>{% endif %}
+                                </li>
+                              {% endif %}
+                            {%- endfor -%}
                           </ul>
                         </div>
                       </div>
