@@ -98,6 +98,12 @@
   text-decoration: none;
 }
 
+.mega-menu__list > li.image text-container{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
 .mega-menu__list > li.image img{
   height: 100%;
   width: 100%;
