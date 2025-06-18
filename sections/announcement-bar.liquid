@@ -39,12 +39,19 @@
               class="announcement-bar__link link link--text focus-inset animate-arrow"
             >
           {%- endif -%}
-          <p class="announcement-bar__message h5">
-            <span>{{ section.blocks.first.settings.text | escape }}</span>
-            {%- if section.blocks.first.settings.link != blank -%}
-              {{- 'icon-arrow.svg' | inline_asset_content -}}
-            {%- endif -%}
-          </p>
+          <div class="announcement-bar__message h5{% if section.settings.marquee %} marquee{% endif %}">
+            {% if section.settings.marquee %}
+              <div>
+                <span>{{ section.blocks.first.settings.text | escape }}</span>
+                <span>{{ section.blocks.first.settings.text | escape }}</span>
+              </div>
+            {% else %}
+              <span>{{ section.blocks.first.settings.text | escape }}</span>
+              {%- if section.blocks.first.settings.link != blank -%}
+                {{- 'icon-arrow.svg' | inline_asset_content -}}
+              {%- endif -%}
+            {% endif %}
+          </div>
           {%- if section.blocks.first.settings.link != blank -%}
             </a>
           {%- endif -%}
