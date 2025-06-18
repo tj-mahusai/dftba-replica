@@ -102,10 +102,10 @@
                       <li>
                         {% if block.settings.link %}<a href="{{ block.settings.link }}">{% endif %}
                         <div>
-                          {% if not block.settings.image %}
-                            {{ 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
-                          {% else %}
+                          {% if block.settings.image %}
                             {{ block.settings.image | image_url: width: 3840 | image_tag }}
+                          {% else %}
+                            {{ 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
                           {% endif %}
                         </div>
                         {% if block.settings.link %}</a>{% endif %}
