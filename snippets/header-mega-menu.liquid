@@ -58,7 +58,8 @@
                   role="list"
                 >
                   {%- if link.levels == 1 %}
-                    <li><ul>
+                    <li>
+                      <ul>
                   {% endif %}
                   {%- for childlink in link.links -%}
                     <li>
@@ -93,9 +94,24 @@
                     </li>
                   {%- endfor -%}
                   {%- if link.levels == 1 %}
-                    </li>
                     </ul>
+                    </li>
                   {% endif %}
+                  {%- for block in section.blocks -%}
+                    {% if block.type == 'image' and block.settings.menu_number == current_loop_index %}
+                      <li>
+                        {% if block.settings.link %}<a href="{{ block.settings.link }}">{% endif %}
+                        <div>
+                          {% if not block.settings.image %}
+                            {{ 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+                          {% else %}
+                            {{ block.settings.image | image_url: width: 3840 | image_tag }}
+                          {% endif %}
+                        </div>
+                        {% if block.settings.link %}</a>{% endif %}
+                      </li>
+                    {% endif %}
+                  {%- endfor -%}
                 </ul>
               </div>
             </details>
