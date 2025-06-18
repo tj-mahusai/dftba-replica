@@ -15,18 +15,19 @@
         "slide_mhNRfx": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/macbook-air-on-desk.jpg",
             "image_overlay_opacity": 0,
-            "heading": "Image slide",
+            "heading": "Home Office",
             "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
-            "link": "",
+            "subheading": "Items for work from home",
+            "button_label": "View Collection",
+            "link": "shopify://collections/clothing",
             "button_style_secondary": false,
             "show_text_box": false,
             "box_align": "bottom-right",
             "text_alignment": "right",
             "text_alignment_mobile": "right",
-            "color_scheme": "scheme-1"
+            "color_scheme": "scheme-3"
           }
         },
         "slide_pgEwqM": {
