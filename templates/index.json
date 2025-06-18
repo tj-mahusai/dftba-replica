@@ -77,21 +77,14 @@
         "heading_gWaFjL": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
-          }
-        },
-        "text_9EcJzU": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+            "heading": "Since 2008 we have helped hundreds of these creators connect with their communities and customers through high quality merchandise and exceptional customer service.",
+            "heading_size": "h2"
           }
         }
       },
       "block_order": [
         "image_JCGUy7",
-        "heading_gWaFjL",
-        "text_9EcJzU"
+        "heading_gWaFjL"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
