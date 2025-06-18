@@ -22,7 +22,7 @@
       }
     }
   {%- endif -%}
-  .slider-buttons{
+  ..slideshow__controls.slider-buttons{
     display: flex;
     position: absolute;
     width: 100%;
@@ -38,14 +38,14 @@
     opacity: 1;
   } */
 
-  slider-component .slider-buttons button{
+  ..slideshow__controls.slider-buttons button{
     pointer-events: all;
-    background: black;
+    background: white;
   }
 
-  /* slider-component .slider-buttons button .icon{
-    color: white
-  } */
+  .slideshow__controls.slider-buttons button .icon{
+    color: black;
+  }
 {%- endstyle -%}
 
 <slideshow-component
