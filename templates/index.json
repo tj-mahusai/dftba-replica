@@ -207,12 +207,19 @@
           "settings": {
             "collection": "stickers"
           }
+        },
+        "featured_collection_c8qNXj": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "nendroids"
+          }
         }
       },
       "block_order": [
         "featured_collection_TWDNw3",
         "featured_collection_AwbqBX",
-        "featured_collection_DQrERV"
+        "featured_collection_DQrERV",
+        "featured_collection_c8qNXj"
       ],
       "name": "t:sections.collection-list.presets.name",
       "settings": {
