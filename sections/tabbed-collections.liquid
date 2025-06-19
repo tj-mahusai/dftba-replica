@@ -68,7 +68,7 @@
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    gap: 1rem;
+    gap: 1.5rem;
     justify-content: left;
   }
 {%- endstyle -%}
@@ -108,7 +108,7 @@
     <div class="collection-title-list-contianer page-width">
       {% for collection in section.settings.collections %}
         {%- if collection.products.size > 0 -%}
-          <div class="">{{ collection.title }}</div>
+          <div class="collection-title-tab h3">{{ collection.title }}</div>
         {% endif %}
       {% endfor %}
     </div>
