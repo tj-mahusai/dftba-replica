@@ -252,11 +252,12 @@
         "column_njyy6X": {
           "type": "column",
           "settings": {
-            "color": "",
-            "title": "Column",
+            "image": "shopify://shop_images/green-plants-grow-in-lines-on-rolling-hills.jpg",
+            "color": "#ffffff",
+            "title": "Gardens",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
+            "link_label": "Shop Now",
+            "link": "shopify://products/akai-haato-nendoroid"
           }
         }
       },
