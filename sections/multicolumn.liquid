@@ -13,6 +13,12 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  .multicolumn-card__info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 {%- endstyle -%}
 
 {%- liquid
@@ -120,24 +126,38 @@
               {%- endif -%}
               <div class="multicolumn-card__info">
                 {%- if block.settings.title != blank -%}
-                  <h3 class="inline-richtext">{{ block.settings.title }}</h3>
+                  <h3
+                    class="inline-richtext"
+                    {% if block.settings.color %}
+                      style="color: {{ block.settings.color }}"
+                    {% endif %}
+                  >
+                    {{ block.settings.title }}
+                  </h3>
                 {%- endif -%}
                 {%- if block.settings.text != blank -%}
-                  <div class="rte">{{ block.settings.text }}</div>
+                  <div
+                    class="rte"
+                    {% if block.settings.color %}
+                      style="color: {{ block.settings.color }}"
+                    {% endif %}
+                  >
+                    {{ block.settings.text }}
+                  </div>
                 {%- endif -%}
                 {%- if block.settings.link_label != blank -%}
                   <a
-                    class="link animate-arrow"
+                    class="link"
                     {% if block.settings.link == blank %}
                       role="link" aria-disabled="true"
                     {% else %}
                       href="{{ block.settings.link }}"
                     {% endif %}
+                    {% if block.settings.color %}
+                      style="color: {{ block.settings.color }}"
+                    {% endif %}
                   >
                     {{- block.settings.link_label | escape -}}
-                    <span class="svg-wrapper"
-                      ><span class="icon-wrap">&nbsp;{{ 'icon-arrow.svg' | inline_asset_content }}</span></span
-                    >
                   </a>
                 {%- endif -%}
               </div>
