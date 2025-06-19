@@ -132,30 +132,39 @@
     "image_with_text_LjQUip": {
       "type": "image-with-text",
       "blocks": {
+        "caption_BjVgpg": {
+          "type": "caption",
+          "settings": {
+            "caption": "Newest Creator",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
         "heading_Njjb8L": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "Uniqlo",
             "heading_size": "h1"
           }
         },
         "text_tWF7dk": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>Catherine McCafferty stars in this queer comedic interview series in which she goes on a new date with a prospective love interest every episode.<br/><br/></p>",
             "text_style": "body"
           }
         },
         "button_wi4rhb": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
+            "button_label": "View Collection",
+            "button_link": "shopify://collections/clothing",
             "button_style_secondary": false
           }
         }
       },
       "block_order": [
+        "caption_BjVgpg",
         "heading_Njjb8L",
         "text_tWF7dk",
         "button_wi4rhb"
@@ -166,7 +175,7 @@
         "height": "medium",
         "use_page_width": false,
         "desktop_image_width": "medium",
-        "layout": "image_first",
+        "layout": "text_first",
         "image_behavior": "none",
         "content_layout": "no-overlap",
         "desktop_content_position": "top",
