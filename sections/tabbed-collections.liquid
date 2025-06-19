@@ -84,6 +84,20 @@
   .collection-title-list-contianer .collection-title-tab.active{
     text-decoration: underline;
   }
+
+  .tabbed-collection .product-card-wrapper .quick-add{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    margin: 0;
+    border: 0;
+    z-index: 10;
+    display: none;
+  }
+
+  .tabbed-collection .product-card-wrapper:hover .quick-add{
+    display: block;
+  }
 {%- endstyle -%}
 {% javascript %}
   const collectionTabItems = document.querySelectorAll(".tabbed-collection .collection-title-tab");
