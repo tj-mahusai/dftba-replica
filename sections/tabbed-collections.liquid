@@ -36,6 +36,33 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  .slideshow__controls.slider-buttons{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    justify-content: space-between;
+    pointer-events: none;
+    transition: opacity .5s;
+  }
+
+  slideshow-component:hover .slider-buttons{
+    opacity: 1;
+  }
+
+  .slideshow__controls.slider-buttons button{
+    pointer-events: all;
+    background: white;
+    border-radius: 5px;
+    margin: 2rem;
+  }
+
+  .slideshow__controls.slider-buttons button .icon{
+    color: black;
+  }
 {%- endstyle -%}
 
 {%- liquid
@@ -47,7 +74,7 @@
   class="color-{{ section.settings.color_scheme }} isolate gradient"
 >
   <div
-    class="collection{% if section.settings.quick_add == 'bulk' %} collection-quick-add-bulk{% endif %} section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}"
+    class="tabbed-collection collection{% if section.settings.quick_add == 'bulk' %} collection-quick-add-bulk{% endif %} section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}"
     id="collection-{{ section.id }}"
     data-id="{{ section.id }}"
   >
@@ -72,7 +99,7 @@
     </div>
 
     {% for collection in section.settings.collections %}
-      <slider-component class="slider-mobile-gutter{% if section.settings.full_width %} slider-component-full-width{% endif %}{% if show_mobile_slider == false %} page-width{% endif %}{% if show_desktop_slider == false and section.settings.full_width == false %} page-width-desktop{% endif %}{% if show_desktop_slider %} slider-component-desktop{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+      <slider-component class="slider-mobile-gutter{% if section.settings.full_width %} slider-component-full-width{% endif %}{% if show_mobile_slider == false %} page-width{% endif %}{% if show_desktop_slider == false and section.settings.full_width == false %} page-width-desktop{% endif %}{% if show_desktop_slider %} slider-component-desktop{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}{% if forloop.first %} active{% endif %}">
         <ul
           id="Slider-{{ section.id }}"
           data-id="{{ section.id }}"
