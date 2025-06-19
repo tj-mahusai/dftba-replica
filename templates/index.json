@@ -187,31 +187,44 @@
         "padding_bottom": 0
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
+    "collection_list_HB7DfF": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_TWDNw3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "clothing"
+          }
+        },
+        "featured_collection_AwbqBX": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "nendroids"
+          }
+        },
+        "featured_collection_DQrERV": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "stickers"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_TWDNw3",
+        "featured_collection_AwbqBX",
+        "featured_collection_DQrERV"
+      ],
+      "name": "t:sections.collection-list.presets.name",
       "settings": {
-        "collection": "all",
-        "products_to_show": 8,
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "columns_desktop": 4,
-        "enable_desktop_slider": true,
-        "full_width": false,
+        "title": "Featured Creators",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
         "show_view_all": false,
-        "view_all_style": "solid",
-        "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": true,
-        "show_rating": false,
-        "quick_add": "standard",
-        "columns_mobile": "2",
+        "columns_mobile": "1",
         "swipe_on_mobile": true,
-        "padding_top": 28,
+        "padding_top": 36,
         "padding_bottom": 36
       }
     },
@@ -327,7 +340,7 @@
     "rich_text_VGkMrD",
     "tabbed_collections_kdi86L",
     "image_with_text_LjQUip",
-    "featured_collection",
+    "collection_list_HB7DfF",
     "collage",
     "video",
     "multicolumn"
