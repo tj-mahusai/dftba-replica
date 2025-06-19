@@ -87,16 +87,16 @@
       const collectionTabProducts = document.querySelectorAll(".tabbed-collection slider-component");
 
       collectionTabItems.forEach(tabItem => {
-        item.classList.remove("active");
+        tabItem.classList.remove("active");
         if(item.dataset.index == tabItem.dataset.index){
-          item.classList.add("active");
+          tabItem.classList.add("active");
         }
       });
 
       collectionTabProducts.forEach(tabItem => {
-        item.classList.remove("active");
+        tabItem.classList.remove("active");
         if(item.dataset.index == tabItem.dataset.index){
-          item.classList.add("active");
+          tabItem.classList.add("active");
         }
       });
 
