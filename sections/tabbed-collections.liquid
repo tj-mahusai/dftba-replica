@@ -63,6 +63,14 @@
   slider-component .slider-buttons button .icon{
    color: black;
   }
+
+  .collection-title-list-contianer{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: left;
+  }
 {%- endstyle -%}
 
 {%- liquid
@@ -97,10 +105,10 @@
         </div>
       {%- endif -%}
     </div>
-    <div class="collection-title-list-contianer">
+    <div class="collection-title-list-contianer page-width">
       {% for collection in section.settings.collections %}
         {%- if collection.products.size > 0 -%}
-          <div>{{ collection.title }}</div>
+          <div class="">{{ collection.title }}</div>
         {% endif %}
       {% endfor %}
     </div>
