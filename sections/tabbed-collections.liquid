@@ -96,7 +96,7 @@
       collectionTabProducts.forEach(tabItem => {
         item.classList.remove("active");
         if(item.dataset.index == tabItem.dataset.index){
-          item.classList.remove("active");
+          item.classList.add("active");
         }
       });
 
@@ -139,7 +139,12 @@
     <div class="collection-title-list-contianer page-width">
       {% for collection in section.settings.collections %}
         {%- if collection.products.size > 0 -%}
-          <div class="collection-title-tab h4" data-index="{{ forloop.index0 }}">{{ collection.title }}</div>
+          <div
+            class="collection-title-tab h4{% if forloop.first %} active{% endif %}"
+            data-index="{{ forloop.index0 }}"
+          >
+            {{ collection.title }}
+          </div>
         {% endif %}
       {% endfor %}
     </div>
