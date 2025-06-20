@@ -312,7 +312,7 @@
       ],
       "name": "t:sections.newsletter.presets.name",
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-5",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
@@ -379,6 +379,68 @@
         "background_color": "#e5f2f0",
         "heading": "What Our Customers Are Saying"
       }
+    },
+    "collapsible_content_pnLNWK": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_7nWqWB": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_8GNWw6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_GDXakk": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_NMg739": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_7nWqWB",
+        "collapsible_row_8GNWw6",
+        "collapsible_row_GDXakk",
+        "collapsible_row_NMg739"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "Collapsible content",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "",
+        "color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -389,6 +451,7 @@
     "collection_list_HB7DfF",
     "multicolumn_dmmaV9",
     "newsletter_QqcfjJ",
-    "testimonials_HB6yLm"
+    "testimonials_HB6yLm",
+    "collapsible_content_pnLNWK"
   ]
 }
