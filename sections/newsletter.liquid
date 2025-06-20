@@ -20,7 +20,7 @@
   }
 {%- endstyle -%}
 
-<div class="newsletter center {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %}">
+<div class="newsletter center grid grid--gapless grid--1-col grid--2-col-tablet{% if section.settings.full_width == false %} newsletter--narrow page-width{% endif %}">
   {% if section.settings.image %}
     <div class="image-container grid__item">
       {{ section.settings.image | image_url: width: 1500 | image_tag }}
