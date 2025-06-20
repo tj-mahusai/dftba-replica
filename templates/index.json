@@ -317,6 +317,11 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "testimonials_HB6yLm": {
+      "type": "testimonials",
+      "name": "Testimonials",
+      "settings": {}
     }
   },
   "order": [
@@ -326,6 +331,7 @@
     "image_with_text_LjQUip",
     "collection_list_HB7DfF",
     "multicolumn_dmmaV9",
-    "newsletter_QqcfjJ"
+    "newsletter_QqcfjJ",
+    "testimonials_HB6yLm"
   ]
 }
