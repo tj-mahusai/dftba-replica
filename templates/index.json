@@ -328,10 +328,46 @@
             "testimonial": "aaa",
             "credentials": "sss"
           }
+        },
+        "testimonial_bBqzhf": {
+          "type": "testimonial",
+          "settings": {
+            "author": "Test",
+            "testimonial": "aaa",
+            "credentials": "sss"
+          }
+        },
+        "testimonial_DiwhYA": {
+          "type": "testimonial",
+          "settings": {
+            "author": "Test",
+            "testimonial": "aaa",
+            "credentials": "sss"
+          }
+        },
+        "testimonial_bYHY8a": {
+          "type": "testimonial",
+          "settings": {
+            "author": "Test",
+            "testimonial": "aaa",
+            "credentials": "sss"
+          }
+        },
+        "testimonial_A6RnMK": {
+          "type": "testimonial",
+          "settings": {
+            "author": "Test",
+            "testimonial": "aaa",
+            "credentials": "sss"
+          }
         }
       },
       "block_order": [
-        "testimonial_79ymxd"
+        "testimonial_79ymxd",
+        "testimonial_bBqzhf",
+        "testimonial_DiwhYA",
+        "testimonial_bYHY8a",
+        "testimonial_A6RnMK"
       ],
       "name": "Testimonials",
       "settings": {}
