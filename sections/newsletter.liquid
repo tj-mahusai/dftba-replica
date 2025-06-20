@@ -17,11 +17,11 @@
 
 <div class="newsletter center grid grid--2-col-desktop grid--1-col-tablet-down{% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %}">
   {% if section.settings.image %}
-    <div class="image-container">
+    <div class="image-container grid-item">
       {{ section.settings.image | image_url: width: 1500 | image_tag }}
     </div>
   {% endif %}
-  <div class="newsletter__wrapper color-{{ section.settings.color_scheme }} gradient content-container isolate{% if section.settings.full_width %} content-container--full-width{% endif %} section-{{ section.id }}-padding">
+  <div class="newsletter__wrapper grid-item color-{{ section.settings.color_scheme }} gradient content-container isolate{% if section.settings.full_width %} content-container--full-width{% endif %} section-{{ section.id }}-padding">
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when '@app' -%}
