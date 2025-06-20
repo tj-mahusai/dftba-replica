@@ -326,7 +326,17 @@
           "settings": {
             "author": "Test",
             "testimonial": "aaa",
-            "credentials": "sss"
+            "credentials": "sss",
+            "background_color": "#2a6fba"
+          }
+        },
+        "testimonial_6RrnRi": {
+          "type": "testimonial",
+          "settings": {
+            "author": "",
+            "testimonial": "",
+            "credentials": "",
+            "background_color": "#2a6fba"
           }
         },
         "testimonial_bBqzhf": {
@@ -334,7 +344,8 @@
           "settings": {
             "author": "Test",
             "testimonial": "aaa",
-            "credentials": "sss"
+            "credentials": "sss",
+            "background_color": "#2a6fba"
           }
         },
         "testimonial_DiwhYA": {
@@ -342,7 +353,8 @@
           "settings": {
             "author": "Test",
             "testimonial": "aaa",
-            "credentials": "sss"
+            "credentials": "sss",
+            "background_color": "#2a6fba"
           }
         },
         "testimonial_bYHY8a": {
@@ -350,7 +362,8 @@
           "settings": {
             "author": "Test",
             "testimonial": "aaa",
-            "credentials": "sss"
+            "credentials": "sss",
+            "background_color": "#2a6fba"
           }
         },
         "testimonial_A6RnMK": {
@@ -358,19 +371,25 @@
           "settings": {
             "author": "Test",
             "testimonial": "aaa",
-            "credentials": "sss"
+            "credentials": "sss",
+            "background_color": "#2a6fba"
           }
         }
       },
       "block_order": [
         "testimonial_79ymxd",
+        "testimonial_6RrnRi",
         "testimonial_bBqzhf",
         "testimonial_DiwhYA",
         "testimonial_bYHY8a",
         "testimonial_A6RnMK"
       ],
       "name": "Testimonials",
-      "settings": {}
+      "settings": {
+        "background_color": "#a4bfba",
+        "text_alignment": "left",
+        "heading": ""
+      }
     }
   },
   "order": [
