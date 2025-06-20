@@ -4,19 +4,17 @@
     style="background-color: {{ testimonial.background_color }}"
   {% endif %}
 >
-  <blockquote>
-    <span
-      class="testimonial-quote start"
-      >“</span
-    >
-    <p>{{ testimonial.testimonial }}</p>
-    <span
-      class="testimonial-quote end"
-      >”</span
-    >
-    <div class="review-content">
-      <div class="review-author">{{ testimonial.author }}</div>
-      <div class="review-credentials">{{ testimonial.credentials }}</div>
-    </div>
-  </blockquote>
+  <span
+    class="testimonial-quote start"
+    >“</span
+  >
+  <p>{{ testimonial.testimonial }}</p>
+  <span
+    class="testimonial-quote end"
+    >”</span
+  >
+  <div class="review-content">
+    <div class="review-author">{{ testimonial.author }}</div>
+    <div class="review-credentials">{{ testimonial.credentials }}</div>
+  </div>
 </div>
