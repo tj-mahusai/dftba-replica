@@ -15,7 +15,7 @@
   }
 {%- endstyle -%}
 
-<div class="newsletter center grid--2-col-desktop grid--1-col-tablet-down{% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %}">
+<div class="newsletter center grid grid--2-col-desktop grid--1-col-tablet-down{% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %}">
   {% if section.settings.image %}
     <div class="image-container">
       {{ section.settings.image | image_url: width: 1500 | image_tag }}
