@@ -81,6 +81,12 @@
             <p>{{ section.settings.collection_intro }}</p>
             <h3>{{ section.settings.collection.title }}</h3>
             <p>{{ section.settings.collection.description }}</p>
+            <a
+              href="{{ section.settings.collection.url }}"
+              class="button button--primary"
+            >
+              View Collection
+            </a>
             {%- for block in section.blocks -%}
               {% case block.type %}
                 {%- when 'heading' -%}
