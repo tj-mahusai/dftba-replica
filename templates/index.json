@@ -267,9 +267,9 @@
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
-        "title": "Multicolumn",
+        "title": "Featured Products",
         "heading_size": "h1",
-        "subtext": "",
+        "subtext": "You dont wan't to miss these",
         "image_width": "full",
         "image_ratio": "square",
         "button_label": "",
