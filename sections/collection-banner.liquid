@@ -80,6 +80,7 @@
           >
             <p>{{ section.settings.collection_intro }}</p>
             <h3>{{ section.settings.collection.title }}</h3>
+            <p>{{ section.settings.collection.description }}</p>
             {%- for block in section.blocks -%}
               {% case block.type %}
                 {%- when 'heading' -%}
