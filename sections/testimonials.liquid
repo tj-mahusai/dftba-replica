@@ -1,7 +1,56 @@
+<div class="testimonial-section-container">
+  <h2 class="h2">
+    <strong>{{ section.settings.heading }}</strong>
+  </h2>
+  <div class="testimonial-container page-width">
+    {% for block in section.blocks %}
+      {% render 'testimonial' with block.settings as testimonial %}
+    {% endfor %}
+  </div>
+</div>
+
 {% schema %}
 {
   "name": "Testimonials",
-  "settings": [],
+  "tag": "section",
+  "blocks": [
+   {
+     "name": "Testimonial",
+     "type": "testimonial",
+     "settings": [
+       {
+         "type": "text",
+         "id": "author",
+         "label": "Author"
+       },
+       {
+         "type": "text",
+         "id": "testimonial",
+         "label": "Testimonial"
+       },
+       {
+         "type": "text",
+         "id": "credentials",
+         "label": "Credentials"
+       }
+     ]
+   }
+ ],
+  "settings": [{
+     "type": "color_background",
+     "id": "background_color",
+     "label": "Background Color"
+   },
+   {
+     "type": "text_alignment",
+     "id": "text_alignment",
+     "label": "Text Alignment"
+   },
+   {
+     "type": "text",
+     "id": "heading",
+     "label": "Section Heading"
+   }],
   "presets": [{
     "name": "Testimonials"
   }]
