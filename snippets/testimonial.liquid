@@ -1,33 +1,29 @@
-<div class="review review--has-card-bg">
-  <div
-    class="review__content aos-animate"
-    data-aos="hero"
-    data-aos-anchor="#Reviews--template--15334137626699__section_reviews_DMiyHE"
-    data-aos-order="2"
-    data-aos-duration="800"
-  >
-    <blockquote class="body-size-4">
-      <span class="review__quote review__quote--open review__quote--open-negative">
-        <span
-          class="review__quote-inner"
-          style="font-size: 4rem;transform: translateY(calc(10% * (4 * 0.833)));"
-          >“</span
-        >
-      </span>
-      <p>{{ testimonial.testimonial }}</p>
-      <span class="review__quote review__quote--close review__quote--close-negative">
-        <span
-          class="review__quote-inner"
-          style="font-size: 4rem;transform: translateY(calc(10% * (4 * 0.833)));"
-          >”</span
-        >
-      </span>
-    </blockquote>
-    <div class="review__author">
-      <div class="review__author__content">
-        <div class="review__author__name">{{ testimonial.author }}</div>
-        <span class="review__author__subheading subheading">{{ testimonial.credentials }}</span>
-      </div>
+<div
+  class=""
+  {{ if testimoonial.background_color }}style="background=color: {{ testimonial.background_color }}"
+  {{ endif }}
+>
+  <blockquote class="body-size-4">
+    <span class="review__quote review__quote--open review__quote--open-negative">
+      <span
+        class="review__quote-inner"
+        style="font-size: 4rem;transform: translateY(calc(10% * (4 * 0.833)));"
+        >“</span
+      >
+    </span>
+    <p>{{ testimonial.testimonial }}</p>
+    <span class="review__quote review__quote--close review__quote--close-negative">
+      <span
+        class="review__quote-inner"
+        style="font-size: 4rem;transform: translateY(calc(10% * (4 * 0.833)));"
+        >”</span
+      >
+    </span>
+  </blockquote>
+  <div class="review__author">
+    <div class="review__author__content">
+      <div class="review__author__name">{{ testimonial.author }}</div>
+      <span class="review__author__subheading subheading">{{ testimonial.credentials }}</span>
     </div>
   </div>
 </div>
