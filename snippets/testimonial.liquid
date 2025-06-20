@@ -1,7 +1,8 @@
 <div
   class=""
-  {{ if testimoonial.background_color }}style="background=color: {{ testimonial.background_color }}"
-  {{ endif }}
+  {% if testimoonial.background_color %}
+    style="background=color: {{ testimonial.background_color }}"
+  {% endif %}
 >
   <blockquote class="body-size-4">
     <span class="review__quote review__quote--open review__quote--open-negative">
