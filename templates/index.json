@@ -287,17 +287,24 @@
     "newsletter_QqcfjJ": {
       "type": "newsletter",
       "blocks": {
+        "heading_XCpzPa": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our Newsletter",
+            "heading_size": "h2"
+          }
+        },
         "heading_wKBqyT": {
           "type": "heading",
           "settings": {
-            "heading": "Subscribe to our emails",
+            "heading": "<strong>Be the first to know!</strong>",
             "heading_size": "h1"
           }
         },
         "paragraph_WKjPME": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Be the first to know about new collections and exclusive offers.</p>"
+            "text": "<p>Get the latest updates from your favorite creators plus product launches, limited-run merch, sales, and events happening soon!<br/><br/></p>"
           }
         },
         "email_form_PJVC67": {
@@ -306,6 +313,7 @@
         }
       },
       "block_order": [
+        "heading_XCpzPa",
         "heading_wKBqyT",
         "paragraph_WKjPME",
         "email_form_PJVC67"
