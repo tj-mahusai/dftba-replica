@@ -320,6 +320,19 @@
     },
     "testimonials_HB6yLm": {
       "type": "testimonials",
+      "blocks": {
+        "testimonial_79ymxd": {
+          "type": "testimonial",
+          "settings": {
+            "author": "Test",
+            "testimonial": "aaa",
+            "credentials": "sss"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_79ymxd"
+      ],
       "name": "Testimonials",
       "settings": {}
     }
