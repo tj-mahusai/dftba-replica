@@ -327,7 +327,7 @@
             "author": "Test",
             "testimonial": "aaa",
             "credentials": "sss",
-            "background_color": "#2a6fba"
+            "background_color": "#a4bfba"
           }
         },
         "testimonial_bBqzhf": {
@@ -336,7 +336,7 @@
             "author": "Test",
             "testimonial": "aaa",
             "credentials": "sss",
-            "background_color": "#2a6fba"
+            "background_color": "#a4bfba"
           }
         },
         "testimonial_DiwhYA": {
@@ -345,7 +345,7 @@
             "author": "Test",
             "testimonial": "aaa",
             "credentials": "sss",
-            "background_color": "#2a6fba"
+            "background_color": "#a4bfba"
           }
         },
         "testimonial_bYHY8a": {
@@ -354,7 +354,7 @@
             "author": "Test",
             "testimonial": "aaa",
             "credentials": "sss",
-            "background_color": "#2a6fba"
+            "background_color": "#a4bfba"
           }
         },
         "testimonial_A6RnMK": {
@@ -363,7 +363,7 @@
             "author": "Test",
             "testimonial": "aaa",
             "credentials": "sss",
-            "background_color": "#2a6fba"
+            "background_color": "#a4bfba"
           }
         }
       },
@@ -376,7 +376,7 @@
       ],
       "name": "Testimonials",
       "settings": {
-        "background_color": "#a4bfba",
+        "background_color": "#e5f2f0",
         "heading": "What Our Customers Are Saying"
       }
     }
