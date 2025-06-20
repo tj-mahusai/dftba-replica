@@ -118,13 +118,6 @@
     "collection_banner_7adP87": {
       "type": "collection-banner",
       "blocks": {
-        "heading_qb94ww": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
-          }
-        },
         "text_UEQ4qK": {
           "type": "text",
           "settings": {
@@ -142,13 +135,13 @@
         }
       },
       "block_order": [
-        "heading_qb94ww",
         "text_UEQ4qK",
         "button_EKiKQ8"
       ],
       "name": "Collection Banner",
       "settings": {
         "collection": "{{ product.metafields.custom.creator.value }}",
+        "collection_intro": "ABOUT THE CREATOR",
         "height": "medium",
         "use_page_width": false,
         "desktop_image_width": "medium",
@@ -167,7 +160,7 @@
   },
   "order": [
     "main",
-    "related-products",
-    "collection_banner_7adP87"
+    "collection_banner_7adP87",
+    "related-products"
   ]
 }
