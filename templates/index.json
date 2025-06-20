@@ -330,15 +330,6 @@
             "background_color": "#2a6fba"
           }
         },
-        "testimonial_6RrnRi": {
-          "type": "testimonial",
-          "settings": {
-            "author": "",
-            "testimonial": "",
-            "credentials": "",
-            "background_color": "#2a6fba"
-          }
-        },
         "testimonial_bBqzhf": {
           "type": "testimonial",
           "settings": {
@@ -378,7 +369,6 @@
       },
       "block_order": [
         "testimonial_79ymxd",
-        "testimonial_6RrnRi",
         "testimonial_bBqzhf",
         "testimonial_DiwhYA",
         "testimonial_bYHY8a",
