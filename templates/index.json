@@ -377,8 +377,7 @@
       "name": "Testimonials",
       "settings": {
         "background_color": "#a4bfba",
-        "text_alignment": "left",
-        "heading": ""
+        "heading": "What Our Customers Are Saying"
       }
     }
   },
