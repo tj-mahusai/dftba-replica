@@ -96,7 +96,10 @@
             %}`;
     var product_id = {{product.id}};
 
-    var recentlyViewed = JSON.parse(localStorage.getItem('recentlyViewed')) || [];
+    var recentlyViewed = []
+    if(localStorage.getItem('recentlyViewed')){
+      recentlyViewed = JSON.parse(localStorage.getItem('recentlyViewed'))  
+    }
     recentlyViewed = recentlyViewed.filter(function(item) {
       return item.id !== product.id;
     });
