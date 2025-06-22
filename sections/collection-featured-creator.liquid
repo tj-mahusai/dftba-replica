@@ -77,15 +77,15 @@
             </div>
           </div>
         </div>
+        {% if collection.metafields.custom.creator.value.quote %}
+          <div class="color-{{ section.settings.quote_color_scheme }}">
+            <h2>{{ collection.metafields.custom.creator.value.quote }}</h2>
+            {% if collection.metafields.custom.creator.value.quote_author %}
+              <p>- {{ collection.metafields.custom.creator.value.quote_author }}</p>
+            {% endif %}
+          </div>
+        {% endif %}
       </div>
-      {% if collection.metafields.custom.creator.value.quote %}
-        <div class="color-{{ section.settings.quote_color_scheme }}">
-          <h2>{{ collection.metafields.custom.creator.value.quote }}</h2>
-          {% if collection.metafields.custom.creator.value.quote_author %}
-            <p>- {{ collection.metafields.custom.creator.value.quote_author }}</p>
-          {% endif %}
-        </div>
-      {% endif %}
     </div>
   </div>
 {% endif %}
