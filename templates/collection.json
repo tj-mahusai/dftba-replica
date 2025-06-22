@@ -22,7 +22,7 @@
       "type": "collection-featured-creator",
       "name": "Creator Banner",
       "settings": {
-        "height": "adapt",
+        "height": "medium",
         "use_page_width": false,
         "desktop_image_width": "medium",
         "layout": "image_first",
