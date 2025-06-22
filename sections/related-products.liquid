@@ -24,7 +24,7 @@
   }
 {%- endstyle -%}
 
-<div class="color-{{ section.settings.color_scheme }} gradient">
+<div class="color-{{ section.settings.color_scheme }} gradient related-product-section-{{ section.id }}">
   <div class="related-products-tab-container page-width">
     <div
       class="related-products-tab-handle h4 active"
@@ -110,6 +110,10 @@
     console.log(recentlyViewed)
     if (recentlyViewed.length > 5) {
       recentlyViewed.pop();
+    }
+
+    if (!recentlyViewed.length) {
+      document.querySelector('.related-product-section-{{ section.id }} .empty-recently-viewed').classList.remove("hidden");
     }
 
     localStorage.setItem('recentlyViewed', JSON.stringify(recentlyViewed));
