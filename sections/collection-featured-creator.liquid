@@ -84,7 +84,7 @@
     <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}">
       <h2>{{ collection.metafields.custom.creator.value.quote }}</h2>
       {% if collection.metafields.custom.creator.value.quote_author %}
-        <p>{{ collection.metafields.custom.creator.value.quote_author }}</p>
+        <p>- {{ collection.metafields.custom.creator.value.quote_author }}</p>
       {% endif %}
     </div>
   {% endif %}
