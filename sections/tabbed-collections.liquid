@@ -99,11 +99,11 @@
     display: block;
   }
 {%- endstyle -%}
-{% javascript %}
-  const collectionTabItems = document.querySelectorAll(".tabbed-collection .collection-title-tab");
+<script>
+  const collectionTabItems = document.querySelectorAll("#tabbed-collection-{{ section.id }} .tabbed-collection .collection-title-tab");
   collectionTabItems.forEach(item => {
     item.addEventListener("click", () => {
-      const collectionTabProducts = document.querySelectorAll(".tabbed-collection slider-component");
+      const collectionTabProducts = document.querySelectorAll("#tabbed-collection-{{ section.id }} .tabbed-collection slider-component");
 
       collectionTabItems.forEach(tabItem => {
         tabItem.classList.remove("active");
@@ -121,7 +121,7 @@
 
     });
   });
-{% endjavascript %}
+</script>
 
 {%- liquid
   assign show_mobile_slider = true
@@ -133,7 +133,7 @@
 >
   <div
     class="tabbed-collection collection{% if section.settings.quick_add == 'bulk' %} collection-quick-add-bulk{% endif %} section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}"
-    id="collection-{{ section.id }}"
+    id="tabbed-collection-{{ section.id }}"
     data-id="{{ section.id }}"
   >
     <div class="collection__title title-wrapper title-wrapper--no-top-margin page-width{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
