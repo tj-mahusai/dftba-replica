@@ -71,6 +71,7 @@
 
   <recently-viewed
     class="recently-viewed page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+    id="recently-viewed-{{ section.id }}"
     data-url="{{ routes.product_recommendations_url }}?limit={{ section.settings.products_to_show }}"
     data-section-id="{{ section.id }}"
     data-product-id="{{ product.id }}"
@@ -112,16 +113,13 @@
 
     localStorage.setItem('recentlyViewed', JSON.stringify(recentlyViewed));
 
-    var recentlyViewedContainer = document.getElementById('recently-viewed-products');
+    var recentlyViewedContainer = document.getElementById('recently-viewed-{{ section.id }}');
     if (recentlyViewedContainer) {
       recentlyViewedContainer.innerHTML = recentlyViewed.map(function(item) {
         return `
-          <div class="recently-viewed-item">
-            <a href="${item.url}">
-              <img src="${item.image}" alt="${item.title}">
-              <p>${item.title}</p>
-            </a>
-          </div>
+          <li>
+            ${item.html}
+          </l>
         `;
       }).join('');
     }
