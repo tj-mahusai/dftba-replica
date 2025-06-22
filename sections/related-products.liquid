@@ -21,6 +21,13 @@
 {%- endstyle -%}
 
 <div class="color-{{ section.settings.color_scheme }} gradient">
+  <div class="related-products-tab-container page-width">
+    <div
+      class="related-products-tab-handle h4{% if forloop.first %} active{% endif %}"
+    >
+      Related Products
+    </div>
+  </div>
   <product-recommendations
     class="related-products page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
     data-url="{{ routes.product_recommendations_url }}?limit={{ section.settings.products_to_show }}"
