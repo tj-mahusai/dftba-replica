@@ -69,7 +69,7 @@
     {% endif %}
   </product-recommendations>
 
-  <product-recommendations
+  <recently-viewed
     class="recently-viewed page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
     data-url="{{ routes.product_recommendations_url }}?limit={{ section.settings.products_to_show }}"
     data-section-id="{{ section.id }}"
@@ -80,7 +80,7 @@
       role="list"
     ></ul>
     <p class="empty-recently-viewed hidden">No recently viewed products found.</p>
-  </product-recommendations>
+  </recently-viewed>
 </div>
 
 <script>
