@@ -100,10 +100,10 @@
   }
 {%- endstyle -%}
 <script>
-  const collectionTabItems = document.querySelectorAll("#tabbed-collection-{{ section.id }} .tabbed-collection .collection-title-tab");
+  const collectionTabItems = document.querySelectorAll("#tabbed-collection-{{ section.id }}.tabbed-collection .collection-title-tab");
   collectionTabItems.forEach(item => {
     item.addEventListener("click", () => {
-      const collectionTabProducts = document.querySelectorAll("#tabbed-collection-{{ section.id }} .tabbed-collection slider-component");
+      const collectionTabProducts = document.querySelectorAll("#tabbed-collection-{{ section.id }}.tabbed-collection slider-component");
 
       collectionTabItems.forEach(tabItem => {
         tabItem.classList.remove("active");
