@@ -101,7 +101,7 @@
       recentlyViewed = JSON.parse(localStorage.getItem('recentlyViewed'))  
     }
     recentlyViewed = recentlyViewed.filter(function(item) {
-      return item.id !== product.id;
+      return item.id !== product_id;
     });
 
     recentlyViewed.unshift({html: product_html, id: product_id});
