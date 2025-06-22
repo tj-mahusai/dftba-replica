@@ -68,9 +68,9 @@
               <h2 class="h2">{{ collection.metafields.custom.creator.value.name }}</h2>
               <p>{{ collection.metafields.custom.creator.value.description }}</p>
               <p>{{ collection.metafields.custom.creator.value }}</p>
-              {% if collection.metafields.custom.creator.social_links %}
+              {% if collection.metafields.custom.creator.value.social_links %}
                 <div class="link-container">
-                  {% for link in collection.metafields.custom.creator.social_links -%}
+                  {% for link in collection.metafields.custom.creator.value.social_links -%}
                     <a href="{{ link.url }}">{{ link }}</a>
                   {% endfor %}
                 </div>
