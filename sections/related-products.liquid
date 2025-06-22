@@ -128,6 +128,32 @@
         `;
       }).join('');
     }
+
+    const relatedProductsTabHandle = document.querySelector(".related-product-section-{{ section.id }} .related-products-tab-handle");
+    const recentlyViewedTabHandle = document.querySelector(".related-product-section-{{ section.id }} .recently-viewed-tab-handle");
+    const productRecommendationsContent = document.querySelector(".related-product-section-{{ section.id }} product-recommendations");
+    const productRecommendationsContent = document.querySelector(".related-product-section-{{ section.id }} recently-viewed");
+    
+    collectionTabItems.forEach(item => {
+      item.addEventListener("click", () => {
+        const collectionTabProducts = document.querySelectorAll("#tabbed-collection-{{ section.id }}.tabbed-collection slider-component");
+  
+        collectionTabItems.forEach(tabItem => {
+          tabItem.classList.remove("active");
+          if(item.dataset.index == tabItem.dataset.index){
+            tabItem.classList.add("active");
+          }
+        });
+  
+        collectionTabProducts.forEach(tabItem => {
+          tabItem.classList.remove("active");
+          if(item.dataset.index == tabItem.dataset.index){
+            tabItem.classList.add("active");
+          }
+        });
+  
+      });
+    });
   });
 </script>
 
