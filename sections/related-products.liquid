@@ -78,6 +78,7 @@
   >
     <ul
       class="grid product-grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down"
+      id="recently-viewed-list-{{ section.id }}"
       role="list"
     ></ul>
     <p class="empty-recently-viewed hidden">No recently viewed products found.</p>
@@ -113,7 +114,7 @@
 
     localStorage.setItem('recentlyViewed', JSON.stringify(recentlyViewed));
 
-    var recentlyViewedContainer = document.getElementById('recently-viewed-{{ section.id }}');
+    var recentlyViewedContainer = document.getElementById('recently-viewed-list-{{ section.id }}');
     if (recentlyViewedContainer) {
       recentlyViewedContainer.innerHTML = recentlyViewed.map(function(item) {
         return `
