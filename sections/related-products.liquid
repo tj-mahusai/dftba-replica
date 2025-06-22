@@ -102,6 +102,7 @@
     });
 
     recentlyViewed.unshift({html: product_html, id: product_id});
+    console.log(recentlyViewed)
     if (recentlyViewed.length > 5) {
       recentlyViewed.pop();
     }
