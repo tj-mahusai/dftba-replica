@@ -60,7 +60,7 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    var product = '{% render 'card-product',
+    var product = `{% render 'card-product',
               card_product: product,
               media_aspect_ratio: section.settings.image_ratio,
               image_shape: section.settings.image_shape,
@@ -68,7 +68,7 @@
               show_vendor: section.settings.show_vendor,
               show_rating: section.settings.show_rating,
               skip_styles: skip_card_product_styles
-            %}';
+            %}`;
 
     var recentlyViewed = JSON.parse(localStorage.getItem('recentlyViewed')) || [];
     recentlyViewed = recentlyViewed.filter(function(item) {
