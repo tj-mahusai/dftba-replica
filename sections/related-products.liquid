@@ -22,17 +22,28 @@
   .recently-viewed {
     display: block;
   }
+
+  .related-products-tab-container{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem
+  }
+
+  .related-products-tab-container .active{
+    text-decoration: underline;
+  }
 {%- endstyle -%}
 
 <div class="color-{{ section.settings.color_scheme }} gradient related-product-section-{{ section.id }}">
   <div class="related-products-tab-container page-width">
     <div
-      class="related-products-tab-handle h4 active"
+      class="related-products-tab-handle h3 active"
     >
       Related Products
     </div>
     <div
-      class="recently-viewed-tab-handle h4"
+      class="recently-viewed-tab-handle h3"
     >
       Recently viewed
     </div>
