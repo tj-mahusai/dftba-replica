@@ -38,7 +38,7 @@
     </div>
   </div>
   <product-recommendations
-    class="active related-products page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+    class="product-recommendations related-products page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
     data-url="{{ routes.product_recommendations_url }}?limit={{ section.settings.products_to_show }}"
     data-section-id="{{ section.id }}"
     data-product-id="{{ product.id }}"
@@ -70,7 +70,7 @@
   </product-recommendations>
 
   <recently-viewed
-    class="recently-viewed related-products page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+    class="hidden recently-viewed related-products page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
     id="recently-viewed-{{ section.id }}"
     data-url="{{ routes.product_recommendations_url }}?limit={{ section.settings.products_to_show }}"
     data-section-id="{{ section.id }}"
@@ -131,8 +131,8 @@
 
     const relatedProductsTabHandle = document.querySelector(".related-product-section-{{ section.id }} .related-products-tab-handle");
     const recentlyViewedTabHandle = document.querySelector(".related-product-section-{{ section.id }} .recently-viewed-tab-handle");
-    const productRecommendationsContent = document.querySelector(".related-product-section-{{ section.id }} product-recommendations");
-    const productRecommendationsContent = document.querySelector(".related-product-section-{{ section.id }} recently-viewed");
+    const productRecommendationsContent = document.querySelector(".related-product-section-{{ section.id }} .product-recommendations");
+    const recentlyViewedContent = document.querySelector(".related-product-section-{{ section.id }} .recently-viewed");
     
     collectionTabItems.forEach(item => {
       item.addEventListener("click", () => {
