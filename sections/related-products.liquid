@@ -60,7 +60,7 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    var product = `{% render 'card-product',
+    var product_html = `{% render 'card-product',
               card_product: product,
               media_aspect_ratio: section.settings.image_ratio,
               image_shape: section.settings.image_shape,
@@ -69,13 +69,14 @@
               show_rating: section.settings.show_rating,
               skip_styles: skip_card_product_styles
             %}`;
+    var product_id = {{product.id}};
 
     var recentlyViewed = JSON.parse(localStorage.getItem('recentlyViewed')) || [];
     recentlyViewed = recentlyViewed.filter(function(item) {
       return item.id !== product.id;
     });
 
-    recentlyViewed.unshift(product);
+    recentlyViewed.unshift({html: product_html, id: product_id});
     if (recentlyViewed.length > 5) {
       recentlyViewed.pop();
     }
