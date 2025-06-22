@@ -133,27 +133,22 @@
     const recentlyViewedTabHandle = document.querySelector(".related-product-section-{{ section.id }} .recently-viewed-tab-handle");
     const productRecommendationsContent = document.querySelector(".related-product-section-{{ section.id }} .product-recommendations");
     const recentlyViewedContent = document.querySelector(".related-product-section-{{ section.id }} .recently-viewed");
-    
-    collectionTabItems.forEach(item => {
-      item.addEventListener("click", () => {
-        const collectionTabProducts = document.querySelectorAll("#tabbed-collection-{{ section.id }}.tabbed-collection slider-component");
-  
-        collectionTabItems.forEach(tabItem => {
-          tabItem.classList.remove("active");
-          if(item.dataset.index == tabItem.dataset.index){
-            tabItem.classList.add("active");
-          }
-        });
-  
-        collectionTabProducts.forEach(tabItem => {
-          tabItem.classList.remove("active");
-          if(item.dataset.index == tabItem.dataset.index){
-            tabItem.classList.add("active");
-          }
-        });
-  
-      });
+
+    relatedProductsTabHandle.addEventListener("click", () => {
+      relatedProductsTabHandle.classList.add("active");
+      recentlyViewedTabHandle.classList.remove("active");
+      productRecommendationsContent.classList.remove("hidden");
+      recentlyViewedContent.classList.add("hidden");
     });
+
+    recentlyViewedTabHandle.addEventListener("click", () => {
+      relatedProductsTabHandle.classList.remove("active");
+      recentlyViewedTabHandle.classList.add("active");
+      productRecommendationsContent.classList.add("hidden");
+      recentlyViewedContent.classList.remove("hidden");
+    });
+    
+    
   });
 </script>
 
