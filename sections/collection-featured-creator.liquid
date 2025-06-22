@@ -80,6 +80,14 @@
       </div>
     </div>
   </div>
+  {% if collection.metafields.custom.creator.value.quote %}
+    <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}">
+      <h2>{{ collection.metafields.custom.creator.value.quote }}</h2>
+      {% if collection.metafields.custom.creator.value.quote_author %}
+        <p>{{ ollection.metafields.custom.creator.value.quote_author }}</p>
+      {% endif %}
+    </div>
+  {% endif %}
 {% endif %}
 {% schema %}
 {
@@ -267,6 +275,12 @@
       "type": "color_scheme",
       "id": "color_scheme",
       "label": "t:sections.multirow.settings.container_color_scheme.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "color_scheme",
+      "id": "quote_color_scheme",
+      "label": "Quote Color Scheme",
       "default": "scheme-1"
     },
     {
