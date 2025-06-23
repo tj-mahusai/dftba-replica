@@ -1,0 +1,39 @@
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var product = '{% render 'card-product',
+              card_product: recommendation,
+              media_aspect_ratio: section.settings.image_ratio,
+              image_shape: section.settings.image_shape,
+              show_secondary_image: section.settings.show_secondary_image,
+              show_vendor: section.settings.show_vendor,
+              show_rating: section.settings.show_rating,
+              skip_styles: skip_card_product_styles
+            %}';
+
+    var recentlyViewed = JSON.parse(localStorage.getItem('recentlyViewed')) || [];
+    recentlyViewed = recentlyViewed.filter(function(item) {
+      return item.id !== product.id;
+    });
+
+    recentlyViewed.unshift(product);
+    if (recentlyViewed.length > 5) {
+      recentlyViewed.pop();
+    }
+
+    localStorage.setItem('recentlyViewed', JSON.stringify(recentlyViewed));
+
+    var recentlyViewedContainer = document.getElementById('recently-viewed-products');
+    if (recentlyViewedContainer) {
+      recentlyViewedContainer.innerHTML = recentlyViewed.map(function(item) {
+        return `
+          <div class="recently-viewed-item">
+            <a href="${item.url}">
+              <img src="${item.image}" alt="${item.title}">
+              <p>${item.title}</p>
+            </a>
+          </div>
+        `;
+      }).join('');
+    }
+  });
+</script>
