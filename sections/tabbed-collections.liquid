@@ -85,6 +85,10 @@
     text-decoration: underline;
   }
 
+  .tabbed-collection{
+    padding: 0 3rem;
+  }
+
   .tabbed-collection .product-card-wrapper .quick-add{
     position: absolute;
     width: 100%;
@@ -113,7 +117,7 @@
     id="tabbed-collection-{{ section.id }}"
     data-id="{{ section.id }}"
   >
-    <div class="collection__title title-wrapper title-wrapper--no-top-margin page-width{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
+    <div class="collection__title title-wrapper title-wrapper--no-top-margin{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
       {%- if section.settings.title != blank -%}
         <h2 class="title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
           {{ section.settings.title }}
@@ -132,7 +136,7 @@
         </div>
       {%- endif -%}
     </div>
-    <div class="collection-title-list-contianer page-width">
+    <div class="collection-title-list-contianer">
       {% for collection in section.settings.collections %}
         {%- if collection.products.size > 0 -%}
           <div
