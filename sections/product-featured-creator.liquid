@@ -50,6 +50,7 @@
   for collection in product.collections
     if collection.metafields.custom.creator
       assign featured_collection = collection
+      break
     endif
   endfor
 -%}
