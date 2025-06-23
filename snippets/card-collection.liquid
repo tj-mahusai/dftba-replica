@@ -31,7 +31,7 @@
   endif
 -%}
 
-<div class="card-wrapper animate-arrow {% if wrapper_class and wrapper_class != 'none' %}{{ wrapper_class }}{% else %}collection-card-wrapper{% endif %}">
+<div class="card-wrapper collection-card animate-arrow {% if wrapper_class and wrapper_class != 'none' %}{{ wrapper_class }}{% else %}collection-card-wrapper{% endif %}">
   <div
     class="
       card
@@ -163,3 +163,14 @@
     {%- endif -%}
   </div>
 </div>
+
+{% style %}
+  .collection-card .card__heading.h2{
+    font-weight: bold;
+    padding: 1rem 0;
+  }
+
+  .collection-card .collection-card-explore{
+    text-decoration: underline;
+  }
+{% endstyle %}
