@@ -320,7 +320,7 @@
       ],
       "name": "t:sections.newsletter.presets.name",
       "settings": {
-        "color_scheme": "scheme-5",
+        "color_scheme": "scheme-4",
         "image": "shopify://shop_images/online-shopping-credit-cards.jpg",
         "full_width": true,
         "padding_top": 40,
@@ -333,46 +333,46 @@
         "testimonial_79ymxd": {
           "type": "testimonial",
           "settings": {
-            "author": "Test",
+            "author": "John Smith",
             "testimonial": "Not only does DFTBA support an amazing cause, but the products are way beyond my wildest dreams in terms of both creativity and quality. I can’t recommend it enough and I think my friends may be sick of hearing me tell them about it. Great news though: that never stops me.",
-            "credentials": "sss",
-            "background_color": "#a4bfba"
+            "credentials": "Teacher",
+            "background_color": "#afc1ff"
           }
         },
         "testimonial_bBqzhf": {
           "type": "testimonial",
           "settings": {
-            "author": "Test",
-            "testimonial": "aaa",
-            "credentials": "sss",
-            "background_color": "#a4bfba"
+            "author": "Brad",
+            "testimonial": "This short, sizzling squire may not be big or strong or smart or experienced but he has ambition and a can-do attitude so the larger Fire Dragons sent him up to the front lines to test his mettle.",
+            "credentials": "Student",
+            "background_color": "#afc1ff"
           }
         },
         "testimonial_DiwhYA": {
           "type": "testimonial",
           "settings": {
-            "author": "Test",
-            "testimonial": "aaa",
-            "credentials": "sss",
-            "background_color": "#a4bfba"
+            "author": "Draco",
+            "testimonial": "The flaming fury of this fiery fiend seems to be fuelled by just about anything it can get its fangs on. Its avaricious appetite forces it to remain in the lower depths of the Flame Caverns where the heaviest and heartiest treasures can be found, hoarded, and eventually consumed.",
+            "credentials": "Vendor",
+            "background_color": "#afc1ff"
           }
         },
         "testimonial_bYHY8a": {
           "type": "testimonial",
           "settings": {
-            "author": "Test",
-            "testimonial": "aaa",
-            "credentials": "sss",
-            "background_color": "#a4bfba"
+            "author": "Sam",
+            "testimonial": "This young but talented mouse is a prodigy in the ways of draconic magic. She may be tasked with guard duty for now but one day, she'll be slinging spells and hoarding treasure with the most powerful Ice Dragons in the Depths!",
+            "credentials": "Athelete",
+            "background_color": "#afc1ff"
           }
         },
         "testimonial_A6RnMK": {
           "type": "testimonial",
           "settings": {
-            "author": "Test",
-            "testimonial": "aaa",
-            "credentials": "sss",
-            "background_color": "#a4bfba"
+            "author": "Portia",
+            "testimonial": "This burly bruiser was assigned to sludge transportation duty on the front line because his superiors believed that his large, intimidating physique would be a great asset for defending the Toxic Tunnels.",
+            "credentials": "Maid",
+            "background_color": "#afc1ff"
           }
         }
       },
@@ -385,7 +385,7 @@
       ],
       "name": "Testimonials",
       "settings": {
-        "background_color": "#e5f2f0",
+        "background_color": "#ffffff",
         "heading": "What Our Customers Are Saying"
       }
     }
