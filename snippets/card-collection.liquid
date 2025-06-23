@@ -119,7 +119,7 @@
     {%- if card_collection != blank and card_style == 'card' or card_collection.featured_image -%}
       <div class="card__content">
         <div class="card__information">
-          <h3 class="card__heading">
+          <h3 class="card__heading h2">
             {%- if card_collection.title != blank -%}
               {{- card_collection.title | escape -}}
             {%- else -%}
@@ -132,7 +132,7 @@
             {% else %}
               href="{{ card_collection.url }}"
             {% endif %}
-            class="full-unstyled-link"
+            class="full-unstyled-link collection-card-explore h3"
           >
             EXPLORE
           </a>
