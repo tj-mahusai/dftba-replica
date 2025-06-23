@@ -149,7 +149,7 @@
       {% for collection in section.settings.collections %}
         {%- if collection.products.size > 0 -%}
           <div
-            class="collection-title-tab h4{% if forloop.first %} active{% endif %}"
+            class="collection-title-tab h3{% if forloop.first %} active{% endif %}"
             data-index="{{ forloop.index0 }}"
           >
             {{ collection.title }}
